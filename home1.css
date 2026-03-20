@@ -1,0 +1,491 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding:0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+/* ------------------------overall box------------------------- */
+.container{
+    /* min-height:100vh; */
+    background-color:rgba(0, 0, 0, 0.98);
+    /* position: relative; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.home{
+    min-height:80vh;
+    padding:10px 10px 80px
+}
+
+/* -------------------------------nav bar---------------------------- */
+
+nav{
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.856);
+    display: flex;
+    gap:15px;
+    padding:10px
+}
+
+
+/* ---------------------buttons------------------ */
+
+.bt1{
+    border-radius: 50%;
+    padding:10px;
+    border:none
+}
+
+.bt2{
+    border-radius: 20px;
+    background-color: green;
+    color:black;
+    padding: 10px 20px;
+    border:none
+}
+
+.bt3{
+    border-radius: 20px;
+    background-color:grey;
+    color:white;
+    padding: 10px 20px;
+    border:none
+}
+
+.bt4{
+     border-radius: 20px;
+    background-color: grey;
+    color:white;
+    padding: 10px 20px;
+    border:none
+}
+
+/* -----------------------------songs part-------------------------------- */
+
+.s1{
+    min-height:200px;
+    background-color:rgba(0, 0, 0, 0.98);
+   
+}
+
+.s2{
+    min-height:200px;
+    background-color:rgba(0, 0, 0, 0.98);
+   
+}
+
+.s3{
+    min-height:200px;
+    background-color:rgba(0, 0, 0, 0.98);
+   margin-bottom: 30px;
+   
+}
+
+.s4{
+     min-height:200px;
+    background-color:rgba(0, 0, 0, 0.98);
+}
+
+.s5{
+     min-height:200px;
+    background-color:rgba(0, 0, 0, 0.98);
+}
+
+.songs{
+    height:280px;
+    width:100%;
+    display: flex;
+    gap:20px;
+    overflow-x: scroll;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------hide scroll bar------------------------------ */
+
+.songs::-webkit-scrollbar{
+    display:none
+}
+
+/* ---------------------------------boxes----------------------------- */
+.overallbox{
+    min-width:200px;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+
+.box{
+    height:90%;
+    width:100%;
+    position: relative;
+    overflow:hidden;
+    /* padding:5px; */
+    cursor: pointer;
+    border-radius: 10px;
+}
+/* -------------------------line 1 boxes color-------------------------------- */
+.box1{
+      background-color: coral;
+}
+.box1 .img1{
+     border:3px solid coral;
+}
+
+.box1 .img2{
+     border:3px solid coral;
+}
+
+.box1 .img3{
+     border:3px solid coral;
+}
+
+/* -------------------box 2-------------------- */
+.box2{
+    background-color: goldenrod;
+}
+.box2 .img1{
+     border:3px solid goldenrod;
+}
+
+.box2 .img2{
+     border:3px solid goldenrod
+}
+
+.box2 .img3{
+     border:3px solid goldenrod
+}
+/* -------------------------box 3------------------------ */
+.box3{
+    background-color: deepskyblue;
+}
+
+.box3 .img1{
+     border:3px solid  deepskyblue
+}
+
+.box3 .img2{
+     border:3px solid  deepskyblue
+}
+
+.box3 .img3{
+     border:3px solid  deepskyblue
+}
+
+/* --------------------------box 4----------------------------------- */
+.box4{
+    background-color: blueviolet;
+}
+
+.box4 .img1{
+     border:3px solid blueviolet;
+}
+
+.box4 .img2{
+     border:3px solid blueviolet;
+}
+
+.box4 .img3{
+     border:3px solid blueviolet;
+}
+/* ---------------------------------box 5-------------------------- */
+
+.box5{
+    background-color: forestgreen;
+}
+
+.box5 .img1{
+     border:3px solid forestgreen;
+}
+
+.box5 .img2{
+     border:3px solid forestgreen;
+}
+
+.box5 .img3{
+     border:3px solid forestgreen;
+}
+/* ----------------------------------box 6------------------------------- */
+.box6{
+    background-color: hotpink;
+}
+
+.box6 .img1{
+     border:3px solid hotpink
+}
+
+.box6 .img2{
+     border:3px solid hotpink
+}
+
+.box6 .img3{
+     border:3px solid hotpink
+}
+/* ------------------------box 7---------------------------------- */
+
+.box7{
+    background-color: mediumblue;
+}
+
+.box7 .img1{
+     border:3px solid mediumblue
+}
+
+.box7 .img2{
+     border:3px solid mediumblue
+}
+
+.box7 .img3{
+     border:3px solid mediumblue
+}
+
+
+.top{
+    height:20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.s2 .box{
+    background-color: turquoise;
+}
+
+.s3 .box{
+    background-color: darkgoldenrod;
+}
+
+h2{
+    color:white;
+    margin: 20px 0px;
+}
+
+p{
+    color:grey;
+    font-size: 14px;
+    padding-bottom:10px
+    
+}
+
+.img1{
+    height:80px;
+    width:80px;
+    top:50px;
+    left:-10px;
+     border-radius: 50%;
+    position: absolute;
+}
+
+
+.img2{
+    top:40px;
+    left:50px;
+    z-index: 3;
+    height:100px;
+    width:100px;
+     border-radius: 50%;
+    position: absolute;
+    border:3px solid coral;
+}
+
+.img3{
+    height:80px;
+    width:80px;
+    top:50px;
+    right:-10px;
+     border-radius: 50%;
+    position: absolute;
+    border:3px solid coral;
+}
+/* --------------------------------liked song-------------------------------- */
+.liked{
+    height:300px;
+}
+
+.liked img{
+    height:200px;
+    width:200px;
+    border-radius:10px
+}
+
+.lbox h5{
+    color:white;
+    font-size: 20px;
+}
+
+.liked a{
+    text-decoration: none;
+}
+/* -----------------------------image style------------------- */
+.s2 img{
+    height:100%;
+    width: 100%;
+}
+
+.box8 .top{
+    color:white
+}
+.s2 .top{
+    position: absolute;
+    width:100%;
+    z-index: 10;
+}
+h1{
+    position: absolute;
+    bottom: 10px;
+    font-size: 30px;
+}
+
+.box h5{
+    position:absolute;
+    color:white;
+    font-size:20px;
+    bottom:10px;
+    left:10px
+}
+
+.s3 .top{
+    position: absolute;
+      width:100%;
+    z-index: 10;
+
+}
+
+.s3 img{
+    height:100%;
+    width: 100%;
+}
+
+/* -----------------------s4 box---------------------- */
+.four{
+    min-width: 200px;
+    /* background-color: blueviolet; */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+
+.s4 img{
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* ------------------------------s5 box----------------------- */
+.five{
+    min-width: 200px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap:20px
+    /* background-color: blue; */
+}
+
+.s5 img{
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* -------------------------------footer------------------------------------ */
+
+footer{
+    /* height:50px; */
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.98);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    position: fixed;
+    bottom:0px;
+    z-index: 10;
+    left:0px
+
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    gap:5px;
+     font-size:20px;
+    cursor:pointer;       
+}
+
+footer i{
+    color:grey;
+}
+
+footer a{
+    color:white
+}
+
+a{
+    text-decoration: none;
+}
+
+footer div:first-child:active{
+    color:white
+}
+
+/* --------------------------------------media screen------------------------------------ */
+
+@media only screen and (max-width:400px){
+    .bt1,.bt2,.bt3,.bt4{
+        padding:10px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    .overallbox{
+        min-width: 160px;
+    }
+    .box{
+        height:150px;
+        width:150px;
+    }
+
+    .box h1{
+        font-size:20px
+    }
+    .box .img1,.img3{
+        height:60px;
+        width:70px;
+    }
+    .box .img2{
+        height:80px;
+        width:80px;
+        top:40px;
+        left:35px
+    }
+
+    .box h5{
+        font-size: 20px;
+    }
+    p{
+        font-size: 12px;
+    }
+
+    .songs{
+        height:230px
+    }
+    .four{
+        height:150px;
+        width:150px
+    }
+    .liked img{
+    height:150px;
+    width:150px;
+    }
+
+}

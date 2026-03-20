@@ -1,0 +1,237 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* -------------------------overall box--------------------------- */
+
+.container{
+    min-height:100vh;
+    background-color: rgba(0, 0, 0, 0.98)
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.98);
+    padding:25px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color:white;
+
+}
+/* -------------------------subnav 1---------------------------------- */
+.subnav1{
+    height:50%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content:space-between;
+}
+/* --------------------------------left part---------------------- */
+.left{
+    height:100%;
+    /* background-color: cornsilk; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px
+}
+
+.left button{
+    border-radius: 50%;
+    padding:10px;
+    border: none;
+}
+
+/* ----------------------------right part------------------------------------- */
+.right{
+     height:100%;
+    /* background-color: cornsilk; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px
+}
+
+.right .fa-regular{
+    font-size: 30px
+}
+
+/* ----------------------------subnav 2------------------------------- */
+
+.subnav2{
+     height:50%;
+     padding:5px
+}
+
+.subnav2 input{
+    padding:10px;
+    width:100%;
+    outline:none;
+    position: relative;
+    padding-left: 40px;
+}
+
+.subnav2 .fa-solid{
+    position:absolute;
+    padding:10px;
+    z-index: 5;
+    color:black;
+    font-size: 20px;
+}
+
+
+/* -------------------------------------------grid box------------------------------- */
+
+.gridbox{
+    /* min-height:60vh; */
+    background-color: rgba(0, 0, 0, 0.98);
+    display: grid;
+    grid-template-columns: auto  auto auto;
+    gap:20px;
+    color:white;
+    padding:20px;
+    padding-bottom: 90px;
+
+}
+
+.box{
+    min-height:200px;
+    border-radius: 10px;
+    padding:10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box1{
+    background-color: blueviolet;
+}
+
+.box2{
+    background-color: darkblue;
+}
+
+.box3{
+    background-color: steelblue;
+}
+
+.box4{
+    background-color: goldenrod;
+}
+
+.box5{
+    background-color: lightseagreen;
+}
+
+.box6{
+    background-color: slategray;
+}
+
+.box7{
+    background-color:darkviolet;
+}
+
+.box8{
+    background-color: darkslategray;
+}
+
+.box9{
+    background-color:crimson;
+}
+
+.box10{
+    background-color: darkorchid;
+}
+
+.box11{
+    background-color: darkorange;
+}
+.box12{
+    background-color:slateblue;
+}
+.box13{
+    background-color: darkred;
+}
+.box14{
+    background-color: darkgreen;
+}
+.box15{
+    background-color: navy;
+}
+
+/* -----------------------box images--------------------------- */
+.gridbox img{
+    height:150px;
+    width:150px;
+    position: absolute;
+   transform: rotate(30deg);
+    bottom: -30px;
+    right: -10px;
+}
+
+/* -------------------------------footer------------------------------------ */
+
+footer{
+    /* height:50px; */
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.98);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    position: fixed;
+    bottom:0px;
+    z-index: 10;
+}
+
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+     font-size:20px;
+    cursor:pointer;
+}
+
+footer a {
+    color: grey
+}
+
+footer p{
+    color: grey;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+/* ----------------------------media query-------------------------------- */
+
+@media only screen and (max-width:700px)  {
+    .gridbox{
+        grid-template-columns: auto auto;
+        padding:10px 10px 90px;
+        gap:10px
+    }
+
+    .box{
+        min-height: 100px;
+    }
+
+    .box h2{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:470px)  {
+    .gridbox img{
+        height:80px;
+        width:80px;
+        bottom:-10px;
+        right:-10px
+    }
+}
